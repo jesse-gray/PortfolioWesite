@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<!--head-->
+
+<head>
+    <title>Advanced Web Design: RSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-
+	Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<!--body-->
+
+<body onload="loadRSS();">
+    <!--Header area-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div id=navContainer>
+                <div id="logoContainer">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.svg" class="d-block align-middle" alt="logo">ITWD 6.408
+                    </a>
+                </div>
+                <div id="homeBtn">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav-fill w-100">
+                        <a class="nav-link" href="index.html">HOME <span class="sr-only al">(current) </span></a>
+                </div>
+                <div id="toggler">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                        </button>
+                </div>
+                <div id="dropdown">
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav-fill w-100">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    FORMS
+                                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="htmlform.html">HTML</a>
+                                    <a class="dropdown-item" href="googleform.html">GOOGLE</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    XML
+                                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="xmlrules.html">XML RULES</a>
+                                    <a class="dropdown-item" id="active" href="rss.html">RSS</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    RESEARCH
+                                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="seo.html">SEO</a>
+                                    <a class="dropdown-item" href="copyright.html">COPYRIGHT</a>
+                                    <a class="dropdown-item" href="references.html">REFERENCES</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript.html">JAVASCRIPT<span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Main content area-->
+    <main>
+        <!--Brief Section-->
+        <section id="brief">
+            <h2>Working with an XML RSS feed</h2>
+            <p>An RSS (Really Simple Syndication) feed is the technology used when collected data from other websites around the Internet and using them on your own website. For example, on this page the articles are sourced from <span><a href="https://www.smashingmagazine.com">www.smashingmagazing.com</a></span>.<br><br>                This is achived by using the XML HTTPRequest object, which is sent to the server and returns with the requested information. In this case we are using a proxy because we are trying to access the feed from a different domain than the request
+                was made from. This needs to be done because we are using localhost, however in a normal website the request would come from the server hosting the website.<br><br> RSS is a very powerfull tool allowing websites to have new content from
+                outside sources without having to update the website manually.</p>
+        </section>
+        <section id="rssArticleSection">
+            <div class="rssArticle">
+                <h3 class="rssTitle"></h3>
+                <p class="rssDescription"></p>
+                <a class="rssLink" href=""></a>
+            </div>
+            <div class="rssArticle">
+                <h3 class="rssTitle"></h3>
+                <p class="rssDescription"></p>
+                <a class="rssLink" href=""></a>
+            </div>
+
+            <div class="rssArticle">
+                <h3 class="rssTitle"></h3>
+                <p class="rssDescription"></p>
+                <a class="rssLink" href=""></a>
+            </div>
+
+            <div class="rssArticle">
+                <h3 class="rssTitle"></h3>
+                <p class="rssDescription"></p>
+                <a class="rssLink" href=""></a>
+            </div>
+
+            <div class="rssArticle">
+                <h3 class="rssTitle"></h3>
+                <p class="rssDescription"></p>
+                <a class="rssLink" href=""></a>
+            </div>
+
+            <div class="rssArticle">
+                <h3 class="rssTitle"></h3>
+                <p class="rssDescription"></p>
+                <a class="rssLink" href=""></a>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer area-->
+    <footer>
+        <p>Advanced Web Design, Copyright &copy 2018</p>
+        <p class="rightalign">Icons made by <a href="https://www.flaticon.com/authors/icomoon">Icomoon</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a> is licensed by <a href="">CC BY 3.0</a></p>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+
+</html>

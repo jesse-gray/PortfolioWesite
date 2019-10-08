@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<!--head-->
+
+<head>
+    <title>Advanced Web Design: XML Rules</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-
+	Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<!--body-->
+
+<body>
+    <!--Header area-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div id=navContainer>
+                <div id="logoContainer">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.svg" class="d-block align-middle" alt="logo">ITWD 6.408
+                    </a>
+                </div>
+                <div id="homeBtn">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav-fill w-100">
+                        <a class="nav-link" href="index.html">HOME <span class="sr-only al">(current) </span></a>
+                </div>
+                <div id="toggler">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                        </button>
+                </div>
+                <div id="dropdown">
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav-fill w-100">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    FORMS
+                                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="htmlform.html">HTML</a>
+                                    <a class="dropdown-item" href="googleform.html">GOOGLE</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    XML
+                                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" id="active" href="xmlrules.html">XML RULES</a>
+                                    <a class="dropdown-item" href="rss.html">RSS</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    RESEARCH
+                                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="seo.html">SEO</a>
+                                    <a class="dropdown-item" href="copyright.html">COPYRIGHT</a>
+                                    <a class="dropdown-item" href="references.html">REFERENCES</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript.html">JAVASCRIPT<span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Main content area-->
+    <main>
+        <!--Brief Section-->
+        <section id="brief">
+            <h2>XML Rules</h2>
+            <p>XML has rules that must be followed in order to be a valid xml file. Describe 6 of these with code examples below.</p>
+        </section>
+
+        <div class="xmlRule">
+            <h2>An XML file must have a root element</h2>
+            <p>Every XML document has exactly one root element which encloses all other elements within it, making it the parent to every element within the document.<br><br>Example:</p>
+            <code>&#60root&#62
+                <br>&nbsp&#60child&#62&#60/child&#62
+                <br>&nbsp&#60child&#62&#60/child&#62
+                <br>&nbsp&#60child&#62&#60/child&#62
+                <br>&#60/root&#62</code>
+        </div>
+
+        <div class="xmlRule">
+            <h2>All XML elements must have closing tag</h2>
+            <p>When a tag is declared, it must also be closed afterwards. This is unlike HTML, which allows some elemnts to have no end tag. Even empty tags must be closed for the XML document to be valid.<br><br>Example:</p>
+            <code>&#60correct&#62&#60/correct&#62<br>&#60incorrect&#62</code>
+        </div>
+
+        <div class="xmlRule">
+            <h2>Case sensitivity matters</h2>
+            <p>Because XML is a case sensitive document, opening and closing tags must match exactly. Even though XML doesnt mind if there is uppercase characters in the tags (as long as they match), some applications using XML do, so it is important to
+                check naming conventions beforehand, or just be safe and use all lowercase characters.<br><br>Example:</p>
+            <code>&#60correct&#62&#60/correct&#62<br>&#60inCorrect&#62&#60/incorrect&#62</code>
+        </div>
+
+        <div class="xmlRule">
+            <h2>Elements can have an attribute tag</h2>
+            <p>Attribute values modify a tag or help identify the type of information being tagged, developers used to HTML can compare it to using a selector, like id or class.<br><br>Example:</p>
+            <code>&#60address category="work"&#62&#60/address&#62</code>
+        </div>
+
+        <div class="xmlRule">
+            <h2>White space is preserved</h2>
+            <p>In an XML document, any extra spaces or line breaks will be read, and can cause issues with the document if not handled correctly.<br><br>Example:</p>
+            <code>&#60address category = "work"&#62<br>&#60address&nbsp&nbsp &nbspcategory = "  work"&#62</code>
+            <p><br>are two very different elements.</p>
+        </div>
+
+        <div class="xmlRule">
+            <h2>XML can include comments</h2>
+            <p>Just like HTML, XML allows developers to comment within the file itself, making for great documentation and readability of the file. XML comments are used in exactly the same format as in HTML as well, making it easy to remember.<br><br>Example:</p>
+            <code>&#60!--This is an XML comment--&#62</code>
+        </div>
+    </main>
+
+    <!--Footer area-->
+    <footer>
+        <p>Advanced Web Design, Copyright &copy 2018</p>
+        <p class="rightalign">Icons made by <a href="https://www.flaticon.com/authors/icomoon">Icomoon</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a> is licensed by <a href="">CC BY 3.0</a></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<!--head-->
+
+<head>
+    <title>Advanced Web Design: Google Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-
+	Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<!--body-->
+
+<body>
+    <!--Header area-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div id=navContainer>
+                <div id="logoContainer">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.svg" class="d-block align-middle" alt="logo">ITWD 6.408
+                    </a>
+                </div>
+                <div id="homeBtn">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav-fill w-100">
+                        <a class="nav-link" href="index.html">HOME <span class="sr-only al">(current) </span></a>
+                </div>
+                <div id="toggler">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                        </button>
+                </div>
+                <div id="dropdown">
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav-fill w-100">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    FORMS
+                                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="htmlform.html">HTML</a>
+                                    <a class="dropdown-item" id="active" href="googleform.html">GOOGLE</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    XML
+                                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="xmlrules.html">XML RULES</a>
+                                    <a class="dropdown-item" href="rss.html">RSS</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    RESEARCH
+                                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="seo.html">SEO</a>
+                                    <a class="dropdown-item" href="copyright.html">COPYRIGHT</a>
+                                    <a class="dropdown-item" href="references.html">REFERENCES</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript.html">JAVASCRIPT<span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Main content area-->
+    <main>
+        <!--Brief Section-->
+        <section id="brief">
+            <h2>Google Form</h2>
+            <p>Form generated from Google forms. <span></span><a href="https://docs.google.com/spreadsheets/d/1eTANuRH4R9OJbkXLufj3wpqKjUy9viDBFC5Ukdd6Lxk/edit?usp=sharing">Link to results spreadsheet</a></span>
+            </p>
+        </section>
+
+        <!--Google form-->
+        <div id="googleForm">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefGkbCcf8F49L0b8qFZVYutEt-ks-1a3iswDEcq85DvXwEQg/viewform?embedded=true" width="100%" height="2035" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </main>
+
+    <!--Footer area-->
+    <footer>
+        <p>Advanced Web Design, Copyright &copy 2018</p>
+        <p class="rightalign">Icons made by <a href="https://www.flaticon.com/authors/icomoon">Icomoon</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a> is licensed by <a href="">CC BY 3.0</a></p>
+    </footer>
+</body>
+
+</html>

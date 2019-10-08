@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<!--head-->
+
+<head>
+    <title>Advanced Web Design: Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-
+	Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<!--body-->
+
+<body>
+    <!--Header area-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div id=navContainer>
+                <div id="logoContainer">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.svg" class="d-block align-middle" alt="logo">ITWD 6.408
+                    </a>
+                </div>
+                <div id="homeBtn">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav-fill w-100">
+                        <a class="nav-link" id="active" href="index.html">HOME <span class="sr-only al">(current) </span></a>
+                    </ul>
+                </div>
+                <div id="toggler">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div id="dropdown">
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav-fill w-100">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                FORMS
+                                            </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="htmlform.html">HTML</a>
+                                    <a class="dropdown-item" href="googleform.html">GOOGLE</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                XML
+                                            </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="xmlrules.html">XML RULES</a>
+                                    <a class="dropdown-item" href="rss.html">RSS</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                RESEARCH
+                                            </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="seo.html">SEO</a>
+                                    <a class="dropdown-item" href="copyright.html">COPYRIGHT</a>
+                                    <a class="dropdown-item" href="references.html">REFERENCES</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript.html">JAVASCRIPT<span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Main content area-->
+    <main>
+        <!--Section 1: Showcase-->
+        <section id="showcase">
+            <div id="showcaseContainer">
+                <h1>Advanced Internet and Web Learning Portfolio</h2>
+                    <p>I am doing this paper as it is a part of the software development major, however while doing it I have found it a lot of fun, and learning some more of the technical aspects of web development this semester I am enjoying it even more.
+                        Hopefully by the end of this course I will be able to implement a lot more functionality into website projects.</p>
+            </div>
+        </section>
+
+        <section id="divContainer">
+            <!-- Section 2a: Web Technologies-->
+            <section id="technologies">
+                <h2>My Web Technologies</h2>
+                <p>Make a list and describe the top ten web technologies you use (This could be hardware or software):</p>
+                <ol>
+                    <li>HTML5 - To creat the content of the webpage.</li>
+                    <li>CSS3 - To make the webpage look nice.</li>
+                    <li>JavaScript - To add functionality to the webpage</li>
+                    <li>Bootstrap Framework - To easily style a webpage using a premade framework.</li>
+                    <li>XML - To easily store and transfer data to and from the webpage.</li>
+                    <li>RSS - To find aritcles from another source and bring them to the webpage.</li>
+                    <li>Google Chrome - To use while testing the webpage.</li>
+                    <li>Google Drive - To backup and share files.</li>
+                    <li>Java - Another language to help add functionality.</li>
+                    <li>HTTP - Protocol for transfering data across the Internet.</li>
+                </ol>
+            </section>
+
+            <!-- Section 2b: Bio-->
+            <section id="bio">
+                <h2>Bio</h2>
+                <div id="bioContainer">
+                    <img src="images/avatar.svg">
+                    <p>Currently very busy with EIT, but in my spare time I like to spend time with my family, watching movies, or playing games.<br><br>Although, the latter is becoming less and less frequent as time goes on.</p>
+                </div>
+            </section>
+        </section>
+
+        <!-- Section 3: Development Skills-->
+        <section id="skills">
+            <h2>Development Skills</h2>
+            <!--HTML Section-->
+            <div class="skillBox">
+                <img src="images/html5.svg">
+                <h4>HTML5 Markup</h4>
+                <p>HTML is the language for describing the structure of Web pages. HTML gives authors the means to:
+                    <span><ul>
+                            <li>Publish online documents with headings, text, tables, lists, photos, etc.</li>
+                            <li>Retrieve online information via hypertext links, at the click of a button.</li>
+                            <li>Design forms for conducting transactions with remote services, for use in searching for information, making reservations, ordering products, etc.</li>
+                            <li>Include spread-sheets, video clips, sound clips, and other applications directly in their documents.</li>
+                        </ul></span> With HTML, authors describe the structure of pages using markup. The elements of the language label pieces of content such as “paragraph,” “list,” “table,” and so on.
+                </p>
+                <a href="https://www.w3.org/standards/webdesign/htmlcss">Source</a>
+            </div>
+            <!--CSS Section-->
+            <div class="skillBox">
+                <img src="images/css3.svg">
+                <h4>CSS3 Styling</h4>
+                <p>CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent
+                    of HTML and can be used with any XML-based markup language. The separation of HTML from CSS makes it easier to maintain sites, share style sheets across pages, and tailor pages to different environments. This is referred to as the
+                    separation of structure (or: content) from presentation.
+                </p>
+                <a href="https://www.w3.org/standards/webdesign/htmlcss">Source</a>
+            </div>
+            <!--Javascript Section-->
+            <div class="skillBox">
+                <img src="images/js.svg">
+                <h4>JavaScript Interactivity</h4>
+                <p>JavaScript is a programming language commonly used in web development. It was originally developed by Netscape as a means to add dynamic and interactive elements to websites. While JavaScript is influenced by Java, the syntax is more similar
+                    to C and is based on ECMAScript, a scripting language developed by Sun Microsystems.
+                </p>
+                <a href="https://techterms.com/definition/javascript">Source</a>
+            </div>
+        </section>
+
+        <!-- Section 4: Statement of Authenticity-->
+        <section id="statement">
+            <h2>Statement of Authenticity</h2>
+            <p>I confirm that:<br><br>This is an original assessment and is entirely my own work.<br>It contains no material previously published or written by another person or myself except where due acknowledgement is made in the text.<br>No material
+                which to a substantial extent, has been submitted for any other academic course, is included without acknowledgement.<br><br><span style="font-weight: bold">Proudly developed by Chris Smith</span> and rebuilt by <span style="font-weight: bold">Jesse Gray</span>.
+            </p>
+        </section>
+    </main>
+
+    <!--Footer area-->
+    <footer>
+        <p>Advanced Web Design, Copyright &copy 2018</p>
+        <p class="rightalign">Icons made by <a href="https://www.flaticon.com/authors/icomoon">Icomoon</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a> is licensed by <a href="">CC BY 3.0</a></p>
+    </footer>
+</body>
+
+</html>

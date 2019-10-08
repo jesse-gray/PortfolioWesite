@@ -1,0 +1,503 @@
+/*Mobile first approach:
+	All the below CSS styles will be defined for mobile devices
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-size: 1.1em;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', Helvetica, sans-serif;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+
+/*Header styles*/
+
+header {
+    width: 100%;
+    min-height: 7vh;
+    background-color: #2a3a4a;
+    padding: 1.5em 0;
+    line-height: 2.3em;
+    color: white;
+    border-bottom: #2a9b35;
+    border-bottom-style: solid;
+}
+
+header img {
+    height: 2.0em;
+    width: 2.0em;
+}
+
+
+/*Navbar styles*/
+
+nav {
+    font-size: 1.1em;
+    color: white;
+}
+
+#navContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45vw 30vw 25vw;
+}
+
+#toggler {
+    margin-top: 15%;
+}
+
+#dropdown {
+    grid-column-start: 2;
+    grid-column-end: -1;
+    position: relative;
+    top: -4vh;
+}
+
+#dropdown li a {
+    text-align: left;
+}
+
+.dropdown-menu {
+    background-color: #2a3a4a;
+    float: left;
+    display: none;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-nav .dropdown-menu {
+    float: left;
+    position: relative;
+    left: -24px;
+    padding: 0;
+}
+
+.dropdown-item {
+    color: rgba(255, 255, 255, .5);
+}
+
+.dropdown-item:hover {
+    background-color: #5DBCD2;
+}
+
+header a {
+    color: rgba(255, 255, 255, .5);
+}
+
+#active {
+    color: #2a9b35;
+}
+
+.navbar-toggler {
+    border-style: none;
+}
+
+
+/*==============================
+           HOME PAGE
+==============================*/
+
+
+/*Showcase section styles*/
+
+#showcase {
+    background-image: url("../images/background.jpg");
+    opacity: 0.7;
+    color: #f2f2f2;
+    min-height: 40vh;
+    padding: 4em 0 2em 0;
+    text-align: center;
+}
+
+#showcaseContainer {
+    width: 95vw;
+    margin: auto;
+}
+
+#showcase h1 {
+    font-size: 2.0em;
+}
+
+#showcase p {
+    font-size: 1.1em;
+}
+
+
+/*Technologies section styles*/
+
+#technologies {
+    background-color: #007491;
+    width: 100vw;
+    padding: 5vw;
+}
+
+#technologies h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#technologies p {
+    font-size: 1.1em;
+}
+
+
+/*Bio section styles*/
+
+#bio {
+    background-color: #2a9b35;
+    width: 100vw;
+    padding: 5vw;
+}
+
+#bio h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#bio img {
+    display: block;
+    height: 8.0em;
+    width: 8.0em;
+    border-radius: 50%;
+    margin: auto;
+}
+
+#bio p {
+    font-size: 1.2em;
+}
+
+
+/*Development skills section styles*/
+
+#skills {
+    width: 85vw;
+    margin: 1em auto;
+}
+
+#skills h2 {
+    font-weight: bold;
+}
+
+#skills img {
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+#skills h4 {
+    padding: 1rem;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#skills p {
+    font-size: 1.2em
+}
+
+.skillBox {
+    margin: 5vw 0;
+    background-color: #E0E0E0;
+    padding: 2rem;
+}
+
+
+/*Statement of Authenticity section styles*/
+
+#statement {
+    background-color: tomato;
+    padding: 5vw;
+}
+
+#statement h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#statement p {
+    font-size: 1.2em;
+}
+
+
+/*==============================
+           FORMS PAGE
+==============================*/
+
+
+/*HTML Forms page styles*/
+
+#brief {
+    height: auto;
+    min-height: 25vh;
+    background-color: #7b8091;
+    padding: 2.5vw;
+}
+
+#bootstrapForm {
+    padding: 2.5vw;
+}
+
+
+/*==============================
+        GOOGLE FORMS PAGE
+==============================*/
+
+
+/*Google forms page styles*/
+
+#googleForm {
+    width: 100vw;
+}
+
+
+/*==============================
+         XML RULES PAGE
+==============================*/
+
+
+/*XML page styles*/
+
+.xmlRule {
+    background-color: #E0E0E0;
+    margin: 1em;
+    padding: 2.5vw;
+}
+
+.xmlRule h2 {
+    padding: 1rem 0;
+}
+
+
+/*==============================
+            RSS PAGE
+==============================*/
+
+
+/*RSS page styles*/
+
+.rssArticle {
+    background-color: #B3A98A;
+    margin: 1em;
+    padding: 1em 2em;
+    overflow-wrap: break-word;
+}
+
+.rssArticle h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/*==============================
+          RESEARCH PAGE
+==============================*/
+
+
+/*SEO page styles*/
+
+#seoSection li {
+    margin: 4% 2.5%;
+}
+
+
+/*Copyright page styles*/
+
+.researchArticle {
+    background-color: #E0E0E0;
+    margin: 2.5% 7.5%;
+    padding: 2.5%;
+}
+
+
+/*References page styles*/
+
+#referencesSection {
+    padding: 1rem 2.5rem;
+}
+
+#referencesSection p {
+    text-indent: 2em;
+}
+
+
+/*==============================
+         JAVASCRIPT PAGE
+==============================*/
+
+
+/*Javascript styles page*/
+
+.exercise {
+    background-color: #E0E0E0;
+    margin: 1em 3em;
+    padding: 1em;
+}
+
+.exercise h5 {
+    font-weight: bold;
+}
+
+#imageBtn {
+    vertical-align: bottom;
+}
+
+#imageToHide {
+    width: 5rem;
+}
+
+input[type="checkbox"]~img {
+    display: none;
+}
+
+input[type="checkbox"]:checked~img {
+    display: inline;
+}
+
+#exercises button {
+    display: block;
+}
+
+
+/*==============================
+           FOOTER PAGE
+==============================*/
+
+
+/*Footer styles*/
+
+footer {
+    padding: 5vw;
+    background-color: #2a3a4a;
+    color: white;
+    min-height: 4.2em;
+    text-align: center;
+    border-top: #2a9b35;
+    border-top-style: solid;
+}
+
+.rightalign {
+    text-align: right;
+}
+
+
+/*The below styles will be customized and changed when displaying website
+ on PC/Laptop/iPad/Tablet...
+ */
+
+@media screen and (min-width: 768px) {
+    /*All styles for tablet screen*/
+    /*Header styles*/
+    header img {
+        height: 3em;
+        width: 3em;
+    }
+    #navContainer {
+        display: grid;
+        grid-template-columns: 70vw 15vw 15vw;
+    }
+    #dropdown {
+        top: -7vh;
+    }
+    /*Home page styles*/
+    #showcase {
+        min-height: 30vh;
+    }
+    #showcaseContainer {
+        width: 90vw;
+    }
+    #showcase h1 {
+        font-size: 3.0em
+    }
+    #showcase p {
+        font-size: 1.3em;
+    }
+    #bioContainer {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+    }
+    #bio img {
+        grid-column-end: 1;
+        margin: 0 1em 0 0;
+    }
+    /*HTML Form styles*/
+    #bootstrapForm {
+        width: 80vw;
+    }
+    /*Google form styles*/
+    #googleForm {
+        width: 70vw;
+        margin: 0 15vw;
+    }
+    /*RSS page styles*/
+    #rssArticleSection {
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /*All styles for desktop screen*/
+    #navContainer {
+        justify-items: end;
+        display: grid;
+        grid-template-columns: 15vw 38vw 39vw;
+        grid-template-rows: auto;
+    }
+    #dropdown {
+        grid-column-start: 3;
+        grid-row-start: 1;
+        top: 0;
+    }
+    /*Home page styles*/
+    #showcaseContainer {
+        width: 80vw;
+    }
+    #showcase h1 {
+        font-size: 3.3em;
+    }
+    #showcase p {
+        font-size: 1.5em;
+    }
+    #divContainer {
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+    }
+    #technologies,
+    #bio {
+        width: auto;
+    }
+    #skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #skills h2 {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    .skillBox {
+        margin: 0 1vw;
+    }
+    /*HTML Form page styles*/
+    #bootstrapForm {
+        width: 50%;
+        padding: 2.5vw 0;
+        margin: 0 25%;
+    }
+    /*RSS page styles*/
+    #rssArticleSection {
+        grid-template-columns: 33.3vw 33.3vw 33.3vw;
+    }
+}
